@@ -1,0 +1,7 @@
+<ul> 
+    <!-- Iterate over object_list -->
+    {% for object in object_list %} 
+    <!-- Display Objects -->
+    <li><a href="{% url 'detailcert' pk=object.pk %}">{{ object.name }}</a></li> 
+    {% endfor %} 
+</ul> 
